@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>LIGHTS, SOUNDS, ACTION!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import favicon -->
+    <link rel="icon" href="https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Ffavicon.png?v=1616274539027" type="image/png" sizes="32x32">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- header -->
+    <h1>Lights, Sounds, Action!</h1>
+    
+    <!-- Paragraph messages, describing the game and telling how
+         much time and how many chances player has left-->
+    <p>
+      Memorize the pattern shown and play it back by clicking the buttons!
+    </p>
+    <p id = "timeleft" class = "hidden"></p>
+    <p id = "chancesleft" class = "hidden"></p>
+    <div id = "gameControls">
+      <button id="startBtn" onclick="startGame()">
+        Start
+      </button>
+      <button id="stopBtn" class = "hidden" onclick="stopGame()">
+        Stop
+      </button>
+    </div>
+    <div id="gameButtonArea">
+      <!-- Game Buttons-->
+      <button id = "button1" onclick="guess(1)" onmousedown="startAudio(1)" onmouseup="stopAudio()" ></button>
+      <button id = "button2" onclick="guess(2)" onmousedown="startAudio(2)" onmouseup="stopAudio()" ></button>
+      <button id = "button3" onclick="guess(3)" onmousedown="startAudio(3)" onmouseup="stopAudio()" ></button>
+      <button id = "button4" onclick="guess(4)" onmousedown="startAudio(4)" onmouseup="stopAudio()" ></button>
+      <button id = "button5" onclick="guess(5)" onmousedown="startAudio(5)" onmouseup="stopAudio()" ></button>
+      <button id = "button6" onclick="guess(6)" onmousedown="startAudio(6)" onmouseup="stopAudio()" ></button>
+      <button id = "button7" onclick="guess(7)" onmousedown="startAudio(7)" onmouseup="stopAudio()" ></button>
+      <button id = "button8" onclick="guess(8)" onmousedown="startAudio(8)" onmouseup="stopAudio()" ></button>
+      <button id = "button9" onclick="guess(9)" onmousedown="startAudio(9)" onmouseup="stopAudio()" ></button>
+    </div>
+    
+    <!-- Audio clips, with menu music, error sound for guessing wrong, and individual button sounds. Menu music set to loop-->
+    <audio id = "menuMusic" src = "https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2F2-05%20STH1%20Star%20Light%20Zone%20_%20Masa's%20Demo%20version%20_.mp3?v=1616318765429" type = "audio/mpeg" loop = "true"></audio>
+    <audio id = "guessWrong" src = "https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Ferror.mp3?v=1616399729276" type = "audio/mpeg"></audio>
+    <div id ="ButtonSound">
+      <audio id = "audio1" src = "https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fskid.mp3?v=1616205142162" type = "audio/mpeg"></audio>
+      <audio id = "audio2" src = "https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fjump.mp3?v=1616205132603" type = "audio/mpeg"></audio>
+      <audio id = "audio3" src = "https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fdead.mp3?v=1616205118321" type = "audio/mpeg"></audio>
+      <audio id = "audio4" src = "https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fring.mp3?v=1616205139891" type = "audio/mpeg"></audio>
+      <audio id = "audio5" src = "https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fbumper.mp3?v=1616205113908" type = "audio/mpeg"></audio>
+      <audio id = "audio6" src = "https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fspring.mp3?v=1616205144388" type = "audio/mpeg"></audio>
+      <audio id = "audio7" src = "https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fbreak%20rock.mp3?v=1616205089577" type = "audio/mpeg"></audio>
+      <audio id = "audio8" src = "https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Flaser.mp3?v=1616205135394" type = "audio/mpeg"></audio>
+      <audio id = "audio9" src = "https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fpop.mp3?v=1616205137533" type = "audio/mpeg"></audio>
+    </div>
+  </body>
+</html>
