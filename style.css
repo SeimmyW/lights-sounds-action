@@ -1,0 +1,213 @@
+/* CSS files add styling rules to your content */
+/* implements unique fonts for header and body*/
+@font-face{
+  font-family: titlefont;
+  src: url(https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2FNiseSegaSonic.TTF?v=1616276623492);
+}
+
+@font-face{
+  font-family: bodyfont;
+  src: url(https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2FSonic%20Advanced%202.ttf?v=1616276619438);
+}
+
+/*style for the entire body, implements background image, custom font for body, color for the body text, aligns text
+  sets font size, and centers the graph using left margins*/
+body {
+  display: inline-grid;
+  font-family: bodyfont, helvetica, arial, sans-serif;
+  background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2FStudiopolis.png?v=1616205054326");
+  background-size: cover;
+  color: yellow;
+  text-align : center;
+  font-size : 16px;
+  margin-left: calc(50% - 267px);
+  line-height: 1px;
+}
+
+/*header style, uses unique font and is centered*/
+h1 {
+  display: inline-grid;
+  color: #1E90FF;
+  font-family: titlefont, verdana, arial, sans-serif;
+  text-align : center;
+}
+
+/*padding and border radius of every button in the page*/
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/*sets width, height, and margin of game buttons*/
+#gameButtonArea > button {
+  width:175px;
+  height:175px;
+  margin:0px;
+}
+
+/*puts game buttons in a grid with no extra gaps between columns and rows*/
+#gameButtonArea{
+  display: inline-grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+/*styles Start and Stop buttons, putting them on a grid and setting width & height*/
+#gameControls{
+  display: inline-grid;
+  width: 535px;
+  height: 50px;
+}
+
+/*if html element has hidden class, it does not display*/
+.hidden {
+  display: none;
+}
+
+/*Style for each individual button, with background color, image, position, and size. Repeating backgrounds disabled*/
+#button1 {
+    background-color: lightgreen;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fsonic%20run.png?1616205015660");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px 100px;
+}
+
+#button1:active, #button1.lit {
+    background: green;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fsonic%20skid.png?1616205018420");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px 100px;
+}
+
+#button2 {
+    background: lightblue;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2FSonic%20standing.png?1616205023058");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px 100px;
+    
+}
+
+#button2:active, #button2.lit {
+    background: blue;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2FSonic%20jumping.png?1616205030053");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 65px 65px;
+}
+
+#button3 {
+    background: pink;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fsonic%20spikes.png?1616205011318");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px 200px;
+  
+}
+
+#button3:active, #button3.lit {
+    background: red;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fsonic%20dead.png?1616205007745");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100px 100px;
+}
+
+#button4 {
+    background: khaki;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2FRing.png?1616205004615");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75px 75px;  
+}
+
+#button4:active, #button4.lit {
+    background: yellow;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fring%20taken.png?1616205001939");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75px 75px;
+}
+
+#button5 {
+    background: white;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2FBumper%20off.png?1616204958271");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75px 75px;
+}
+
+#button5:active, #button5.lit {
+    background:antiquewhite;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2FBumper%20on.png?1616204970875");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75px 75px;
+}
+
+#button6 {
+    background: sandybrown;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fspring%20down.png?1616205041928");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px 50px;
+}
+#button6:active, #button6.lit {
+    background: chocolate;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2FSpring%20up.png?1616205045195");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px 50px;
+}
+
+#button7 {
+    background: tomato;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2FKnuckles%20rock%20standing.png?1616204997353");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px 175px;
+}
+
+#button7:active, #button7.lit {
+    background: darkred;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2FKnuckles%20rock%20breaking.png?1616204993808");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px 175px;
+}
+
+#button8 {
+    background: fuchsia;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fegg%20robo%20standby.png?1616204982522");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 175px 150px;
+}
+
+#button8:active, #button8.lit {
+    background: purple;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2Fegg%20robo%20laser.png?1616204979097");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 175px 150px;
+}
+
+#button9 {
+    background: gray;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2FEggman%20ship.png?1616204989083");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px 150px;
+}
+
+#button9:active, #button9.lit {
+    background:black;
+    background-image: url("https://cdn.glitch.com/ea7adc4c-63f9-4417-8795-f64a1e3783dc%2FEggman%20ship%20popped.png?1616204986119");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px 150px;
+}
