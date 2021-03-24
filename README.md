@@ -49,7 +49,7 @@ Completed pre-work with requirements:
 
 Completed pre-work with additional features:
 
-![](https://i.imgur.com/pOtar09.gif)
++<img src="https://github.com/SeimmyW/lights-sounds-action/blob/main/Actual%20pre-work%20+%20extra%20features.gif?raw=true">
 
 ## Reflection Questions
 
