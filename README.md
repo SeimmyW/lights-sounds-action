@@ -49,7 +49,7 @@ Completed pre-work with requirements:
 
 Completed pre-work with additional features:
 
-![](https://i.imgur.com/zAv4o7r.gif)
+![](https://i.imgur.com/pOtar09.gif)
 
 ## Reflection Questions
 
