@@ -55,6 +55,8 @@ Completed pre-work with additional features:
 
 -![Sample Gif](http://i.imgur.com/tgL88d8.gif)
 
+https://github.com/SeimmyW/lights-sounds-action/blob/main/Pre-work%20with%20extra%20features.gif?raw=true
+
 ## Reflection Questions
 
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
