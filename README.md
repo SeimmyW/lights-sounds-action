@@ -47,9 +47,13 @@ Completed pre-work with requirements:
 
 ![](https://i.imgur.com/ggIfdNA.gif)
 
+-![Sample Gif](http://i.imgur.com/ggIfdNA.gif)
+
 Completed pre-work with additional features:
 
 ![](https://i.imgur.com/tgL88d8.gif)
+
+-![Sample Gif](http://i.imgur.com/tgL88d8.gif)
 
 ## Reflection Questions
 
